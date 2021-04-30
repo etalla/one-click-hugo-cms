@@ -1,7 +1,12 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Homepage"
+title = "Homepage" #accessible via {{ .Site.Title }}
+
+# Can add global site params below
+[params]
+  author = "Eva T" # accessible via {{ .Site.Params.author }}
+  description = "My website"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
