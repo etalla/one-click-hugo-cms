@@ -4,6 +4,8 @@ This is a small business template built with [Victor Hugo](https://github.com/ne
 
 ## Getting started
 
+First, check out the Readme for Victor Hugo, here: https://github.com/netlify-templates/victor-hugo
+
 Use our deploy button to get your own copy of the repository. 
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/one-click-hugo-cms&stack=cms)
