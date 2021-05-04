@@ -1,5 +1,8 @@
 {{ define "main" }}
-
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
+<main aria-role="main">
+    {{ partial "header" (dict "title" .Title "subtitle" .Params.subtitle) }}
+    <div class="homepage-content">
+        {{.Params.text}}
+    </div>
+</main>
 {{ end }}
