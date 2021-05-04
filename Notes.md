@@ -46,3 +46,12 @@ Questions, to figure out:
 - Params:
     - Page params: declared in a md file under a folder and accessible to html file in that same folder. See https://gohugo.io/variables/page/#page-level-params
     - Site params: some are built in, others can be declared in config.toml
+
+- Site structure:
+    Home
+        - Main article
+        - Quick link to table
+    About
+    Methodology
+    Feedback
+    Table
