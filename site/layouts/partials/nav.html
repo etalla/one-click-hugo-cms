@@ -1,13 +1,22 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
-
-	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
-	</a>
-
-	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
-		<!-- to add here: Nav of our pages -->
-	</ul>
-
+<!--    CSS burger menu -- curtesy of Erik Terwan   -->
+<!--   https://codepen.io/erikterwan/pen/EVzeRP  -->
+<!--        MIT License        -->
+<nav class="cl-nav" role="navigation">
+	<div>
+		<!-- A fake / hidden checkbox is used as click receiver,
+    	so you can use the :checked selector on it.-->
+		<input type="checkbox" />
+		<!-- Some spans to act as a hamburger.-->
+		<span></span>
+		<span></span>
+		<span></span>
+		<!-- Too bad the menu has to be inside of the button but hey, it's pure CSS magic.-->
+		<ul>
+			<!-- Renders the li.html content view for each content/posts/*.md 
+			View defined at layouts/defaults/li -->
+			{{ range .Pages }}
+			{{ .Render "li"}}
+			{{ end }}
+		</ul>
+	</div>
 </nav>

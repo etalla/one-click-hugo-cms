@@ -20,7 +20,7 @@
  *    4. Debugging
  *       - Debug all
  *       - Debug children
- *
+ *    5. Custom temporary styles
  */
 
 
@@ -72,6 +72,7 @@
 @import './imports/_buttons';
 @import './imports/_svg';
 @import './imports/_cms';
+@import './imports/_nav-burger';
 
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
@@ -85,3 +86,20 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
+
+/***
+    Custom temporary styles start here -- temporary for now until figure out proper placement for these.
+***/
+body{
+    padding: 1.75em;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: var(--font-size-xl);
+    font-weight: var(--bold-font-weight);
+}
+h3{
+    font-size: var(--font-size-m);
+}
